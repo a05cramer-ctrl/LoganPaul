@@ -4,6 +4,8 @@ import bgEmoji from './image-removebg-preview.png'
 import photoYakub from './loganpaul-yakub.png'
 import photoOar from './oar2.jpg'
 
+const TOKEN_CA = '9of2AsQCNk5bdMNHj7KJwLoWxvbDBM4FSpYSXGpUpump'
+
 const BG_POSITIONS = [
   { top: '8%', left: '5%', size: 72 }, { top: '15%', right: '8%', left: 'auto', size: 56 },
   { top: '25%', left: '12%', size: 64 }, { top: '35%', right: '3%', left: 'auto', size: 48 },
@@ -20,7 +22,7 @@ function App() {
   const [copied, setCopied] = useState(false)
 
   const copyCA = () => {
-    navigator.clipboard.writeText('0x0000000000000000000000000000000000000000')
+    navigator.clipboard.writeText(TOKEN_CA)
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
   }
@@ -82,7 +84,7 @@ function App() {
         </div>
         <p className="subheadline">Built on controversy. Powered by attention.</p>
         <div className="cta-grid">
-          <button className="cta cta-1">Buy the Backlash</button>
+          <a href={`https://pump.fun/coin/${TOKEN_CA}`} target="_blank" rel="noopener noreferrer" className="cta cta-1">Buy the Backlash</a>
           <button className="cta cta-2">Enter the Comeback Arc</button>
         </div>
       </section>
