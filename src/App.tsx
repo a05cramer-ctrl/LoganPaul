@@ -84,7 +84,7 @@ function App() {
         </div>
         <p className="subheadline">Built on controversy. Powered by attention.</p>
         <div className="cta-grid">
-          <a href={`https://pump.fun/coin/${TOKEN_CA}`} target="_blank" rel="noopener noreferrer" className="cta cta-1">Buy the Backlash</a>
+          <button className="cta cta-1" onClick={copyCA}>Buy the Backlash</button>
           <button className="cta cta-2">Enter the Comeback Arc</button>
         </div>
       </section>
